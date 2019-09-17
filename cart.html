@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JavaScript Project</title>
+	<link rel="stylesheet" href="style.css" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="slick/slick-1.8.1/slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="slick/slick-1.8.1/slick/slick-theme.css" charset="UTF-8" />
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+</head>
+<body>
+	<nav>
+		<button onclick="topFunction()" id="myBtn" title="Go to top"><img src="images/EdYodaLogo.png" height="50" width="70"></button>
+		<div class="left">
+			<span class="logo"><a href="index.html" style="color: black;"><strong>SHOP</strong>LANE</span></a>
+			<span class="linked"><a href="index.html" style="color: black;">CLOTHING</span></a>
+			<span class="linked"><a href="index.html" style="color: black;">ACCESSORIES</span></a>
+		</div>
+		<div class="center">
+			<div class="search-box" >
+				<i class="fas fa-search"></i>
+				<input type="text" name="searchbox" placeholder="Search here ...">
+			</div>
+		</div>
+		<div class="right">
+			<img class="profile"src="https://png.pngtree.com/svg/20170502/6b7e95cf9c.svg">
+			<div class="cart"><a href="cart.html" style="color: black;"><i class="fas fa-shopping-cart"></i></a></div>
+		</div>
+	</nav>
+	<br><br>
+	<h2>Check Out</h2>
+	<div class="cart-main">
+		<div class="left-side" id="left">
+		</div>
+		<div class="right-side">
+			<div class="card">
+				<div class="caption">
+					<h3>Total Amount</h3>
+					<h5>Amount: Rs.<span id="total">0000.00</span></h5>
+					<br>
+					<button class="buy" id="place"><a href="order.html">Place Order</a></button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer>
+		<div class="main-footer">
+			<div class="column">
+				<ul>
+					<li class="heading">ONLINE STORE</li>
+					<li class="child">MEN'S CLOTHING</li>
+					<li class="child">WOMEN'S CLOTHING</li>
+					<li class="child">MEN'S ACCESSORIES</li>
+					<li class="child">WOMEN'S ACCESSORIES</li>
+				</ul>
+			</div>
+			<div class="column">
+					<ul>
+						<li class="heading">HELPFUL LINKS</th>
+						<li class="child">HOME</li>
+						<li class="child">ABOUT</li>
+						<li class="child">CONTACT</li>
+					</ul>
+			</div>
+			<div class="column">
+					<ul>
+						<li class="heading">PARTNERS</li>
+						<li class="child">ZARA</li>
+						<li class="child">PANTALONS</li>
+						<li class="child">LAVIS</li>
+						<li class="child">UCB</li>
+						<li class="child">+ MANY MORE</li>
+					</ul>
+			</div>
+			<div class="column">
+					<ul>
+						<li class="heading">ADDRESS</li>
+						<li class="child">BULIDING 109</li>
+						<li class="child">CENTRAL AVENUE</li>
+						<li class="child">LA - 08974</li>
+						<li class="child">UNITED STATES</li>
+					</ul>
+			</div>
+		</div>
+	</footer>
+	<script>
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("myBtn").style.display = "block";
+  } else {
+    document.getElementById("myBtn").style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script type="text/javascript" src="slick/slick-1.8.1/slick/slick.min.js"></script>
+	<script type="text/javascript" src="cart.js"></script>
+</body>
+</html>
